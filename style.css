@@ -1,0 +1,99 @@
+/** Project JS Officiële Website **/
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+html {
+  background-color: black;
+}
+body {
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+  background-color: #121212;
+  transition: 0.2s;
+}
+header {
+  background-color: #202020;
+  padding: 10px;
+  margin-bottom:10px;
+  box-shadow: 0 2px 4px #000;
+  height: 40px;
+  user-select: none;
+}
+h1 {
+  margin: 0px;
+  font-weight: 100;
+  float: left;
+}
+p1 {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  float: left;
+  font-size: 1.5em;
+}
+p2 {
+  margin: 5px;
+  font-size: 16px;
+  float: left;
+  display: block;
+  clear: both;
+}
+.topLink {
+  color: #fff;
+  text-decoration: none;
+  float: right;
+  line-height: 26px;
+  margin: 5px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.topLink:hover{
+  text-decoration: underline;
+}
+.current {
+  font-weight: 600;
+}
+.big {
+  background-color: #202020;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 0 5px 2px #000;
+}
+content {
+  display: flex;
+}
+.details {
+  color: #888;
+  font-size: 14px;
+}
+.download {
+  background-color: #c38fff;
+  clear: both;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin:5px;
+  user-select: none;
+  box-shadow: 0 0 4px 0px #000;
+  letter-spacing: 2px;
+}
+.download:hover {
+  background-color: #03dac6;
+  color: black;
+}
+
+:focus {
+display: none;
+}
+::selection {
+  background-color: #c38fff;
+  color: white;
+}
