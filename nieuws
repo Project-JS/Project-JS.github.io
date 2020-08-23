@@ -2,7 +2,7 @@
 <html>
 <!--- Project JS Officiele Website --->
   <head>
-    <title>Project JS</title>
+    <title>Nieuws - Project JS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,16 @@
       <header>
         <h1>Project JS</h1>
         <a class="topLink" >Downloads</a>
-        <a class="topLink" href="./nieuws">Nieuws</a>
-        <a class="topLink current" >Home</a>
+        <a class="topLink current" href="./nieuws.html">Nieuws</a>
+        <a class="topLink" href="./index.html">Home</a>
       </header>
       <content>
       <section class="big">
-      <p1>Welkom bij de Project JS Officiele Website!</p1>
-        <p2>Project JS is een bladwijzer-pakket die Javascript bladwijzers en Apps met verschillende functies bevat.</p2>
-        <p2>Druk op de knop "Download" op de nieuwste Project JS te downloaden.</p2>
+      <p1>Project JS Nieuws</p1>
+        <p2>Hier vindt je nieuws over Project JS</p2>
       </section>
       <aside class="big">
-        <p1>Laatste Project JS Release</p1>
+        <p1>Nieuws</p1>
           <p2>Project JS v2.0</p2>
           <p2 class="details">03-07-2020 - 147.6KB</p2>
           <a class="buttonbig"><img class="iconsmall" src="./assets/download.svg">Download</a>

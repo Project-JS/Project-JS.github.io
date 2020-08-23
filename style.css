@@ -75,6 +75,7 @@ p2 {
 }
 .current {
   font-weight: 600;
+  color: #F0544F;
 }
 .big {
   background-color: #202020;
@@ -92,8 +93,8 @@ content {
   color: #888;
   font-size: 0.875em;
 }
-.download {
-  background-color: #c38fff;
+.buttonbig {
+  background-color: #F0544F;
   clear: both;
   color: #000;
   padding: 0.625em;
@@ -109,8 +110,8 @@ content {
   box-shadow: 0 0 0.25em 0 #000;
   letter-spacing: 0.125em;
 }
-.download:hover {
-  background-color: #03dac6;
+.buttonbig:hover {
+  background-color: #8467C0;
 }
 .bottomtext {
   color: #888;
