@@ -1,15 +1,13 @@
 /** Project JS Officiële Website **/
-@import url('https://fonts.googleapis.com/css2?family=Inter');
 html {
   background-color: #121212;
 }
 body {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   margin: 0;
   margin-top: 4.375em;
   color: #fff;
   background-color: #121212;
-  transition: 0.2s;
   width: -moz-available;
   height: -moz-available;
   width: -webkit-fill-available;
@@ -38,19 +36,23 @@ footer {
   width: -moz-available;
   width: -webkit-fill-available;
   bottom: 0;
+  display: flex;
 }
 h1 {
   margin: 0;
   font-size: 2em;
   line-height: 1.2em;
-  font-weight: 100;
+  font-weight: 400;
   float: left;
 }
 p1 {
   margin: 0.3125em;
-  font-weight: bold;
+  font-weight: 600;
   float: left;
   font-size: 1.5em;
+  clear: both;
+  width: -moz-available;
+  width: -webkit-fill-available;
 }
 p2 {
   margin: 0.3125em;
@@ -85,6 +87,7 @@ p2 {
   width: -moz-available;
   width: -webkit-fill-available;
   box-shadow: 0 0 0.3125em 0.125em #000;
+  transition: 0.2s;
 }
 content {
   display: flex;
@@ -117,16 +120,56 @@ content {
   color: #888;
   font-size: 0.875em;
   line-height: 0.625em;
-  font-weight: 100;
+  font-weight: 400;
 }
 .right {
   float: right;
+  text-align: right;
 }
 .iconsmall {
   width: 1.25em;
   margin-bottom: -0.25em;
   margin-right: 0.125em;
 }
+.table {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #888;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  font-weight: bold;
+  background-color: #313131;
+}
+tr:nth-child(even) {
+  background-color: #2b2b2b;
+}
+alert {
+  background-color: #bd3030;
+  display: block;
+  padding: 0.3125em;
+  margin: 0.3125em;
+  border-radius: 0.3125em;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  box-shadow: 0 0 0.25em 0 #000;
+  font-weight: 800;
+  user-select: none;
+  text-align: center;
+}
+.warning {
+  background-color: #b7b73e;
+  color: black;
+  padding: 0.1675em;
+}
+
+
+
+
 @media screen and (max-width: 650px) {
   content {
     display: grid;
@@ -141,9 +184,6 @@ content {
   footer {
     display: none;
   }
-}
-:focus {
-display: none;
 }
 ::selection {
   background-color: #c38fff;
