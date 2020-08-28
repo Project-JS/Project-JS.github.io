@@ -71,12 +71,12 @@ p2 {
   border: 0;
   cursor: pointer;
   font-size: 1.125em;
+  font-weight: normal;
 }
 .topLink:hover{
   text-decoration: underline;
 }
 .current {
-  font-weight: 600;
   color: #F0544F;
 }
 .big {
@@ -111,10 +111,14 @@ content {
   margin: 0.3125em;
   user-select: none;
   box-shadow: 0 0 0.25em 0 #000;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.105em;
 }
 .buttonbig:hover {
   background-color: #8467C0;
+  text-decoration: none;
+}
+.buttonbig:active {
+  background-color: #56da56;
 }
 .bottomtext {
   color: #888;
@@ -139,17 +143,20 @@ content {
 td, th {
   border: 1px solid #888;
   text-align: left;
-  padding: 8px;
+  padding: 6px;
+  font-family: monospace, "Inter", Arial, sans-serif;
 }
 th {
   font-weight: bold;
   background-color: #313131;
+  user-select: none;
+  font-family: "Inter", Arial, sans-serif;
 }
 tr:nth-child(even) {
   background-color: #2b2b2b;
 }
 alert {
-  background-color: #bd3030;
+  background-color: #f0544f;
   display: block;
   padding: 0.3125em;
   margin: 0.3125em;
@@ -157,17 +164,31 @@ alert {
   width: -moz-available;
   width: -webkit-fill-available;
   box-shadow: 0 0 0.25em 0 #000;
-  font-weight: 800;
+  font-weight: 400;
   user-select: none;
   text-align: center;
+  height: max-content;
+  font-size: 1.375em;
+  line-height: 2.8125em;
+  color: #000;
 }
 .warning {
-  background-color: #b7b73e;
-  color: black;
-  padding: 0.1675em;
+  background-color: #008a00;
+  color: white;
+  height: max-content;
+  line-height: 2.625em;
+  font-size: 1.25em;
 }
 
-
+a {
+  color: #7be8e8;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 
 @media screen and (max-width: 650px) {
@@ -186,6 +207,9 @@ alert {
   }
 }
 ::selection {
-  background-color: #c38fff;
+  background-color: blueviolet;
   color: white;
+}
+:focus {
+  outline: none!important;
 }
