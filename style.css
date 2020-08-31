@@ -89,6 +89,9 @@ p2 {
   box-shadow: 0 0 0.3125em 0.125em #000;
   transition: 0.2s;
 }
+.small {
+  display: grid;
+}
 content {
   display: flex;
 }
