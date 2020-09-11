@@ -1,100 +1,60 @@
 <html>
 
 <head>
-    <title>Project JS Home</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter');
-        a {
-            background-color: #353535aa;
-            backdrop-filter: saturate(180%) blur(10px);
-            float: left;
-            border: 2px solid #ffffff1a;
-            margin: 5px;
-            width: 160px;
-            padding: 10px;
-            height: 100px;
-            text-decoration: none;
-            text-align: center;
-            color: #fff;
-            border-radius: 10px;
-        }
-        a:hover {
-            border: 2px solid #fff;
-        }
-        header {
-            text-align: center;
-            color: #000;
-            padding: 10px;
-        }
-        h1 {
-          font-weight: 100;
-        }
-        body {
-            margin: 0;
-            background: url('https://i.vgy.me/VBF32r.png') no-repeat;
-            background-size: 1366px 100%;
-            font-family: Inter, Arial;
-            background-color: #4e7fb1;
-            color: #fff;
-            user-select: none;
-            height: 100%;
-        }
-
-        img {
-            width: 64px;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Project JS Start</title>
+    <script src="./start.js"></script>
+    <link rel="stylesheet" href="./theme.css">
+    <link rel="stylesheet" href="/assets/Inter/inter.css">
 </head>
 
-<body>
+<body onload="startTime();">
     <header>
-        <h1>Project JS Home</h1>
+        <h1>Project JS Start</h1><h1 id="time"></h1>
     </header>
-    <a href='https://www.google.com'><img src='https://www.buro210.nl/wp-content/uploads/2017/05/google-logo-icon-PNG-Transparent-Background-e1495781274381.png'>
+    <a href='https://www.google.com'><img src='./icons/google.png'>
             <p>Google</p>
         </a>
-    <a href='https://isw.magister.net/'><img src='https://cdn2.downdetector.com/static/uploads/logo/magister_1.jpg'>
+    <a href='https://isw.magister.net/'><img src='./icons/magister.png'>
             <p>Magister</p>
         </a>
-    <a href='https://www.office.com'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png'>
+    <a href='https://www.office.com'><img src='./icons/office365.png'>
             <p>Office 365</p>
         </a>
-    <a href='https://cool.cloudwise.eu/'><img src='https://lh3.googleusercontent.com/z9YbNKIGHQn0QrAIn3ytYI12kb_khxh1sYw_U6Db83U9aS51lSXMKfhMaM8p1noBysihHjMg=w128-h128-e365'>
+    <a href='https://cool.cloudwise.eu/'><img src='./icons/cloudwise.png'>
             <p>Cloudwise COOL</p>
         </a>
 
-<a href='https://drive.google.com/'><img src='https://sites.google.com/a/easy2do.nl/apps/_/rsrc/1426243943631/google-drive/drive.png'>
+<a href='https://drive.google.com/'><img src='./icons/drive.png'>
         <p>Google Drive</p>
     </a>
 
-        <a href='https://www.youtube.com/'><img src='https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png'>
+        <a href='https://www.youtube.com/'><img src='./icons/youtube.png'>
                 <p>YouTube</p>
             </a>
 
-            <a href='https://maps.google.com/'><img src='https://lh3.googleusercontent.com/PoTrayfCHVcgWMLP9wryR37V2VUjVX8AQZEnGChDGu5MMHQLH2w_Fs4MlT4SsEF-Hq4Qca-J7yIpr3Q-u1mkOtnn1VoeKV7IL2ae=h128'>
+            <a href='https://maps.google.com/'><img src='./icons/maps.png'>
                     <p>Google Maps</p>
                 </a>
 
-                <a href='https://translate.google.nl/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/1200px-Google_Translate_logo.svg.png'>
+                <a href='https://translate.google.nl/'><img src='./icons/translate.png'>
                         <p>Translate</p>
                     </a>
-                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Fiswict-my.sharepoint.com'><img src='https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/d8/75/6f/d8756f5f-7a94-d81b-f0e4-7925bfe66532/OneDrive.png/1200x630bb.png'>
+                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Fiswict-my.sharepoint.com'><img src='./icons/onedrive.png'>
                         <p>OneDrive</p>
                     </a>
-                <a href='https://outlook.live.com/'><img src='https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/c5/65/bc/c565bc1c-a784-c238-131c-61f737b6fc8c/Outlook.png/1200x630bb.png'>
+                <a href='https://outlook.live.com/'><img src='./icons/outlook.png'>
                         <p>Outlook</p>
                     </a>
-                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Foffice.live.com%2Fstart%2FWord.aspx%3Fauth%3D2'><img src='https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/36/5f/d6/365fd6a9-5e06-5131-56c5-9956244124ea/MSWD.png/246x0w.png'>
+                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Foffice.live.com%2Fstart%2FWord.aspx%3Fauth%3D2'><img src='./icons/word.png'>
                         <p>Word</p>
                     </a>
-                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Foffice.live.com%2Fstart%2FExcel.aspx%3Fauth%3D2'><img src='https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/8f/76/52/8f76520d-6360-d5bb-4191-bc57cee68bfc/XCEL.png/1200x630bb.png'>
+                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Foffice.live.com%2Fstart%2FExcel.aspx%3Fauth%3D2'><img src='./icons/excel.png'>
                         <p>Excel</p>
                     </a>
-                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Foffice.live.com%2Fstart%2FPowerPoint.aspx%3Fauth%3D2'><img src='https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/ca/33/4dca3326-b4d3-2a60-6687-8c37f046b4bd/PPT3.png/1200x630bb.png'>
+                <a href='https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=g-isw.info&wreply=https%3A%2F%2Foffice.live.com%2Fstart%2FPowerPoint.aspx%3Fauth%3D2'><img src='./icons/powerpoint.png'>
                         <p>PowerPoint</p>
                     </a>
-                <a href='https://www.onenote.com/'><img src='https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/4a/e5/b2/4ae5b2a7-222f-420f-92ef-05fcecb2c5dd/OneNote.png/1200x630bb.png'>
+                <a href='https://www.onenote.com/'><img src='./icons/onenote.png'>
                         <p>OneNote</p>
                     </a>
 </body>
