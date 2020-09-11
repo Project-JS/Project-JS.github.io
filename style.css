@@ -232,18 +232,10 @@ a:hover {
     display: grid;
   }
   header h1 {
-    font-size: 1.3em;
-    line-height: 1.9em;
     display: none;
-  }
-  .current {
-    /* display: none; */
   }
   footer {
     display: none;
-  }
-  .topLink {
-    margin: 0.2125em;
   }
   .toplinks {
     float: left;
